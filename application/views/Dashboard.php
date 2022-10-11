@@ -35,11 +35,11 @@
 							<div class="single-order">
 								<div class="single-order-flex">
 									<div class="single-order-contents">
-										<span class="single-order-contents-subtitle"> Pending Reservation </span>
+										<span class="single-order-contents-subtitle"> View Film Halls </span>
 										<h2 class="single-order-contents-title"> 02 </h2>
 									</div>
 									<div class="single-order-icon">
-										<i class="las la-history"></i>
+										<i class="las la-film"></i>
 									</div>
 								</div>
 							</div>
@@ -48,7 +48,7 @@
 							<div class="single-order">
 								<div class="single-order-flex">
 									<div class="single-order-contents">
-										<span class="single-order-contents-subtitle"> Accepted Reservation </span>
+										<span class="single-order-contents-subtitle"> View Events </span>
 										<h2 class="single-order-contents-title"> 32 </h2>
 									</div>
 									<div class="single-order-icon">
@@ -61,7 +61,7 @@
 							<div class="single-order">
 								<div class="single-order-flex">
 									<div class="single-order-contents">
-										<span class="single-order-contents-subtitle"> Cancelled Reservation </span>
+										<span class="single-order-contents-subtitle"> Users Information </span>
 										<h2 class="single-order-contents-title"> 08 </h2>
 									</div>
 									<div class="single-order-icon">
