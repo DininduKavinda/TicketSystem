@@ -16,8 +16,10 @@ class LoginController extends CI_Controller {
 						'user_id'=>$result->id,
 						'first_name'=>$result->first_name,
 						'last_name'=>$result->last_name,
+						'username'=>$result->username,
 						'login_email'=>$result->login_email,
 						'phone'=>$result->phone,
+						'role_id'=>$result->role_id,
 						'logged_in'=>TRUE,
 					);
 					$this->session->set_userdata($user_data);

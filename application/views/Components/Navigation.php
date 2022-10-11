@@ -18,8 +18,8 @@
 			<div class="container custom-container-one nav-container">
 				<div class="logo-wrapper">
 					<a href="index.html" class="logo">
-						<img src="<?php echo base_url('assets/img/logo.png');?>" alt="">
-						
+						<img src="<?php echo base_url('assets/img/logo.png'); ?>" alt="">
+
 					</a>
 				</div>
 				<div class="responsive-mobile-menu d-lg-none">
@@ -65,6 +65,10 @@
 						<li><a href="contact.html"> Contact Us </a></li>
 					</ul>
 				</div>
+				<?php
+				$logged_in=$this->session->userdata('logged_in');
+				if($logged_in=false){
+				?>
 				<div class="navbar-right-content show-nav-content">
 					<div class="single-right-content">
 						<div class="navbar-right-flex">
@@ -77,6 +81,31 @@
 						</div>
 					</div>
 				</div>
+<?php
+				}else{
+?>
+				<div class="navbar-right-content show-nav-content">
+					<div class="single-right-content">
+						<div class="navbar-author">
+							<div class="navbar-author-flex">
+								<div class="navbar-author-thumb">
+									<img src="assets/img/single-page/author.jpg" alt="img">
+								</div>
+								<div class="navbar-author-name">
+									<h6 class="navbar-author-name-title"><?php echo $this->session->userdata('first_name');?></h6>
+								</div>
+							</div>
+							<div class="navbar-author-wrapper">
+								<div class="navbar-author-wrapper-list">
+									<span class="navbar-author-wrapper-list-item"> Log Out </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php 
+				}
+				?>
 			</div>
 		</nav>
 

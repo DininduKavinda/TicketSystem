@@ -1,5 +1,5 @@
 <?php
-	include (APPPATH.'views/Components/Navigation.php');
+	include ('Components/Navigation.php');
 ?>
 <div class="breadcrumb-area breadcrumb-padding">
 	<div class="container custom-container-one">
@@ -8,7 +8,7 @@
 				<div class="breadcrumb-contents">
 					<h4 class="breadcrumb-contents-title"> Dashboard </h4>
 					<ul class="breadcrumb-contents-list list-style-none">
-						<li class="breadcrumb-contents-list-item"> <a href="index.html" class="breadcrumb-contents-list-item-link"> Home </a> </li>
+						<li class="breadcrumb-contents-list-item"> <a href="#" class="breadcrumb-contents-list-item-link"> Home </a> </li>
 						<li class="breadcrumb-contents-list-item"> Dashboard </li>
 					</ul>
 				</div>
@@ -27,43 +27,7 @@
 					<i class="las la-bars"></i>
 				</div>
 			</div>
-			<div class="dashboard-left-content">
-				<div class="dashboard-close-main">
-					<div class="close-bars"> <i class="las la-times"></i> </div>
-					<div class="dashboard-bottom">
-						<ul class="dashboard-list list-style-none">
-							<li class="list active">
-								<a href="dashboard.html"> <i class="las la-briefcase"></i> Dashboard </a>
-							</li>
-							<li class="list">
-								<a href="dashboard_cancellation.html"> <i class="las la-times-circle"></i> Cancellation & Refund </a>
-							</li>
-							<li class="list">
-								<a href="dashboard_report_issue.html"> <i class="las la-exclamation-triangle"></i> Report an issue <span class="badge-notification"> 12 </span> </a>
-							</li>
-							<li class="list has-children">
-								<a href="javascript:void(0)"> <i class="las la-user-circle"></i> Profile </a>
-								<ul class="submenu list-style-none">
-									<li class="list"> <a href="dashboard_profile.html"> Profile </a> </li>
-									<li class="list"> <a href="dashboard_edit_profile.html"> Edit Profile </a> </li>
-									<li class="list"> <a href="dashboard_pass_change.html"> Password Change </a> </li>
-								</ul>
-							</li>
-							<li class="list has-children">
-								<a href="javascript:void(0)"> <i class="las la-headset"></i> Support </a>
-								<ul class="submenu list-style-none">
-									<li class="list"> <a href="dashboard_support.html"> Support </a> </li>
-									<li class="list"> <a href="dashboard_tickets.html"> Tickets </a> </li>
-									<li class="list"> <a href="dashboard_add_tickets.html"> Add Tickets </a> </li>
-								</ul>
-							</li>
-							<li class="list">
-								<a href="javascript:void(0)"> <i class="las la-sign-out-alt"></i> Log Out </a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<?php include('Components/Sidebar.php'); ?>
 			<div class="dashboard-right-contents mt-4 mt-lg-0">
 				<div class="dashboard-promo">
 					<div class="row gy-4 justify-content-center">
@@ -322,35 +286,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mt-5">
-					<div class="col">
-						<div class="pagination-wrapper">
-							<ul class="pagination-list list-style-none">
-								<li class="pagination-list-item-prev">
-									<a href="javascript:void(0)" class="pagination-list-item-button"> Prev </a>
-								</li>
-								<li class="pagination-list-item">
-									<a href="javascript:void(0)" class="pagination-list-item-link"> 1 </a>
-								</li>
-								<li class="pagination-list-item">
-									<a href="javascript:void(0)" class="pagination-list-item-link"> 2 </a>
-								</li>
-								<li class="pagination-list-item">
-									<a href="javascript:void(0)" class="pagination-list-item-link"> 3 </a>
-								</li>
-								<li class="pagination-list-item">
-									<a href="javascript:void(0)" class="pagination-list-item-link"> 4 </a>
-								</li>
-								<li class="pagination-list-item active">
-									<a href="javascript:void(0)" class="pagination-list-item-link"> 5 </a>
-								</li>
-								<li class="pagination-list-item-next">
-									<a href="javascript:void(0)" class="pagination-list-item-button"> Next </a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -377,4 +313,4 @@
 		</div>
 	</div>
 </div>
-<?php include (APPPATH.'views/Components/Footer.php'); ?>
+<?php include ('Components/Footer.php'); ?>
