@@ -1,4 +1,6 @@
 <?php
+	if ($this->session->userdata('logged_in')){
+
 	include ('Components/Navigation.php');
 	include('Components/Sidebar.php'); ?>
 			<div class="dashboard-right-contents mt-4 mt-lg-0">
@@ -312,4 +314,10 @@
 		</div>
 	</div>
 </div>
-<?php include ('Components/Footer.php'); ?>
+<?php include ('Components/Footer.php'); 
+
+	}
+	else{
+		redirect('IndexController/login');
+	}?>
+

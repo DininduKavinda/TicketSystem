@@ -23,7 +23,7 @@ class LoginController extends CI_Controller {
 						'login_address'=>$result->login_address,
 						'login_image'=>$result->login_image,
 						'login_date'=>$result->login_date,
-						'logged_in'=>TRUE,
+						'logged_in'=>TRUE
 					);
 					$this->session->set_userdata($user_data);
 					$this->session->set_flashdata('msg','Welcome Back');

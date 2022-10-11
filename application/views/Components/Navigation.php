@@ -66,15 +66,14 @@
 					</ul>
 				</div>
 				<?php
-				$logged_in = $this->session->userdata('logged_in');
-				if ($logged_in=true) {
+					if ($this->session->userdata('logged_in')){
 				?>
 				<div class="navbar-right-content show-nav-content">
 						<div class="single-right-content">
 							<div class="navbar-author">
 								<div class="navbar-author-flex">
 									<div class="navbar-author-thumb">s
-										<img src="assets/img/single-page/author.jpg" alt="img">
+										<img  src="assets/img/single-page/author.jpg" alt="img">
 									</div>
 									<div class="navbar-author-name">
 										<h6 class="navbar-author-name-title"><?php echo $this->session->userdata('first_name'); ?></h6>
@@ -82,6 +81,7 @@
 								</div>
 								<div class="navbar-author-wrapper">
 									<div class="navbar-author-wrapper-list">
+										<a href="<?php echo base_url('index.php/AdminController/Profile'); ?>" class="navbar-author-wrapper-list-item"> Profile </a>
 										<a href="<?php echo base_url('index.php/AdminController/logout'); ?>" class="navbar-author-wrapper-list-item"> Log Out </a>
 									</div>
 								</div>
