@@ -1,33 +1,6 @@
 <?php
 	include ('Components/Navigation.php');
-?>
-<div class="breadcrumb-area breadcrumb-padding">
-	<div class="container custom-container-one">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="breadcrumb-contents">
-					<h4 class="breadcrumb-contents-title"> Dashboard </h4>
-					<ul class="breadcrumb-contents-list list-style-none">
-						<li class="breadcrumb-contents-list-item"> <a href="#" class="breadcrumb-contents-list-item-link"> Home </a> </li>
-						<li class="breadcrumb-contents-list-item"> Dashboard </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="body-overlay"></div>
-<div class="dashboard-area section-bg-2 dashboard-padding">
-	<div class="container">
-		<div class="dashboard-contents-wrapper">
-			<div class="dashboard-icon">
-				<div class="sidebar-icon">
-					<i class="las la-bars"></i>
-				</div>
-			</div>
-			<?php include('Components/Sidebar.php'); ?>
+	include('Components/Sidebar.php'); ?>
 			<div class="dashboard-right-contents mt-4 mt-lg-0">
 				<div class="dashboard-promo">
 					<div class="row gy-4 justify-content-center">
@@ -35,8 +8,8 @@
 							<div class="single-order">
 								<div class="single-order-flex">
 									<div class="single-order-contents">
-										<span class="single-order-contents-subtitle"> View Film Halls </span>
-										<h2 class="single-order-contents-title"> 02 </h2>
+										<span class="single-order-contents-subtitle"> View Film  </span>
+										<h2 class="single-order-contents-title"> Halls </h2>
 									</div>
 									<div class="single-order-icon">
 										<i class="las la-film"></i>
@@ -48,8 +21,8 @@
 							<div class="single-order">
 								<div class="single-order-flex">
 									<div class="single-order-contents">
-										<span class="single-order-contents-subtitle"> View Events </span>
-										<h2 class="single-order-contents-title"> 32 </h2>
+										<span class="single-order-contents-subtitle"> View  </span>
+										<h2 class="single-order-contents-title"> Events </h2>
 									</div>
 									<div class="single-order-icon">
 										<i class="las la-check-circle"></i>
@@ -61,11 +34,11 @@
 							<div class="single-order">
 								<div class="single-order-flex">
 									<div class="single-order-contents">
-										<span class="single-order-contents-subtitle"> Users Information </span>
-										<h2 class="single-order-contents-title"> 08 </h2>
+										<span class="single-order-contents-subtitle"> Users  </span>
+										<h2 class="single-order-contents-title"> Info </h2>
 									</div>
 									<div class="single-order-icon">
-										<i class="las la-times-circle"></i>
+										<i class="las la-user-check"></i>
 									</div>
 								</div>
 							</div>
@@ -73,11 +46,37 @@
 						<div class="col-xxl-3 col-xl-4 col-sm-6 orders-child">
 							<div class="single-order">
 								<div class="single-order-contents">
-									<span class="single-order-contents-subtitle"> Completed Reservation </span>
-									<h2 class="single-order-contents-title">38 </h2>
+									<span class="single-order-contents-subtitle"> View </span>
+									<h2 class="single-order-contents-title">Reserv </h2>
 								</div>
 								<div class="single-order-icon">
 									<i class="las la-clipboard-check"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-3 col-xl-4 col-sm-6 orders-child">
+							<div class="single-order">
+								<div class="single-order-flex">
+									<div class="single-order-contents">
+										<span class="single-order-contents-subtitle"> View </span>
+										<h2 class="single-order-contents-title"> Booked</h2>
+									</div>
+									<div class="single-order-icon">
+										<i class="las la-archive"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-3 col-xl-4 col-sm-6 orders-child">
+							<div class="single-order">
+								<div class="single-order-flex">
+									<div class="single-order-contents">
+										<span class="single-order-contents-subtitle"> View </span>
+										<h2 class="single-order-contents-title"> Payments </h2>
+									</div>
+									<div class="single-order-icon">
+										<i class="las la-briefcase"></i>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -66,44 +66,45 @@
 					</ul>
 				</div>
 				<?php
-				$logged_in=$this->session->userdata('logged_in');
-				if($logged_in=false){
+				$logged_in = $this->session->userdata('logged_in');
+				if ($logged_in=true) {
 				?>
 				<div class="navbar-right-content show-nav-content">
-					<div class="single-right-content">
-						<div class="navbar-right-flex">
-							<div class="navbar-right-btn">
-								<a href="<?php echo base_url('index.php/IndexController/Login'); ?>"> Log In </a>
-							</div>
-							<div class="btn-wrapper">
-								<a href="<?php echo base_url('index.php/IndexController/Register'); ?>" class="cmn-btn btn-bg-1 radius-10"> Sign Up </a>
-							</div>
-						</div>
-					</div>
-				</div>
-<?php
-				}else{
-?>
-				<div class="navbar-right-content show-nav-content">
-					<div class="single-right-content">
-						<div class="navbar-author">
-							<div class="navbar-author-flex">
-								<div class="navbar-author-thumb">
-									<img src="assets/img/single-page/author.jpg" alt="img">
+						<div class="single-right-content">
+							<div class="navbar-author">
+								<div class="navbar-author-flex">
+									<div class="navbar-author-thumb">s
+										<img src="assets/img/single-page/author.jpg" alt="img">
+									</div>
+									<div class="navbar-author-name">
+										<h6 class="navbar-author-name-title"><?php echo $this->session->userdata('first_name'); ?></h6>
+									</div>
 								</div>
-								<div class="navbar-author-name">
-									<h6 class="navbar-author-name-title"><?php echo $this->session->userdata('first_name');?></h6>
-								</div>
-							</div>
-							<div class="navbar-author-wrapper">
-								<div class="navbar-author-wrapper-list">
-									<span class="navbar-author-wrapper-list-item"> Log Out </span>
+								<div class="navbar-author-wrapper">
+									<div class="navbar-author-wrapper-list">
+										<a href="<?php echo base_url('index.php/AdminController/logout'); ?>" class="navbar-author-wrapper-list-item"> Log Out </a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<?php 
+					
+				<?php
+				} else {
+				?>
+					<div class="navbar-right-content show-nav-content">
+						<div class="single-right-content">
+							<div class="navbar-right-flex">
+								<div class="navbar-right-btn">
+									<a href="<?php echo base_url('index.php/IndexController/Login'); ?>"> Log In </a>
+								</div>
+								<div class="btn-wrapper">
+									<a href="<?php echo base_url('index.php/IndexController/Register'); ?>" class="cmn-btn btn-bg-1 radius-10"> Sign Up </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php
 				}
 				?>
 			</div>
